@@ -120,12 +120,12 @@ $(document).ready(function () {
 
 // Tamanho minimo da sessão
 $(function () {
-    $('#porque, #inovador').css({
+    $('#porque').css({
         'min-height': $(window).innerHeight() - 100
     });
 
     $(window).resize(function () {
-        $('#porque, #inovador').css({
+        $('#porque').css({
             'min-height': $(window).innerHeight() - 100
         });
     });

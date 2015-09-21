@@ -7,6 +7,46 @@
     margin-top: 40px;
 }
 
+#funcionalidades {
+    padding: 50px 0px;
+}
+
+#funcionalidades h1 {
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#funcionalidades img {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    border: 8px solid white;
+    min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#contacte {
+    padding: 50px 0px;
+}
+
+#contacte h1 {
+    color: white;
+    padding-bottom: 50px;
+      text-align: center;
+    
+}
+
+.cta {
+    background-image: url('https://www.laserfiche.com/content/themes/bbwp/assets/images/backgrounds/brand-graphic-01.svg');
+    background-size: cover;
+}
+
+.cta-secondary {
+    background-color: #009c67;
+}
+
 .logo,
 .intro,
 .menu,
@@ -380,7 +420,7 @@ body {
 
 .panel.panel-default {
     border: none;
-    box-shadow: none !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
@@ -619,32 +659,57 @@ body {
     padding: 4px 0px;
 }
 
-
-#footer{
-background-color: #073324;
+#footer {
+    background-color: #073324;
 }
-
-
 
 #footer a:hover {
     color: white;
-        font-weight: 600;
+    font-weight: 600;
 }
 
-#footer a , #footer p, #footer h3 {
+#footer a,
+#footer p,
+#footer h3 {
     padding: 5px 10px;
     color: #f9f9f9;
     text-decoration: none;
 }
 
-
-#duvidas a{
-text-decoration: none;
+#duvidas a {
+    text-decoration: none;
 }
 
+.panel-body-custom {
+    background-color: white;
+    color: black;
+}
+/*CaRD Funcionalidades*/
 
-.panel-body-custom{
-background-color: white;
-    color:black;
-  
+.notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 10px solid #353535;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+}
+
+.notice-sm {
+    padding: 10px;
+    font-size: 80%;
+}
+
+.notice-lg {
+    padding: 35px;
+    font-size: large;
+}
+
+.notice-default {
+    border-color: #009c67;
+}
+
+.notice-default>strong {
+    color: #009c67;
 }
