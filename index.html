@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Smart Zapp - Gestor de atendimento por whatsapp</title>
+    <link rel="icon" href="img/logo.png">
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Jquery-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+
+    <!-- Fonts e icones -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2:800' rel='stylesheet' type='text/css'>
+
+
+    <!-- CSS -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/planos.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <!--Video Section-->
+        <section class="content-section  hidden-xs  ">
+            <div id="container">
+                <video autoplay loop muted class="background-video">
+                    <source src="video/WorkingSpace.mp4" type="video/mp4">
+                        <source src="video/flowers.webm" type="video/webm">
+                </video>
+
+                <div class="content ">
+                    <div class="container">
+                        <div class="container col-lg-12">
+                            <h2 class="sub-titulo">Smart Zapp é um software com focado na</h3>
+                            <h1 class="titulo">Gestão de Atendimento ao Cliente Via <strong> WhatsApp!</strong></h1>
+                           
+                            <div class="row linha-ul">
+                                <div class="col-sm-6">
+                                    <ul class="fa-ul titulo-ul">
+                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Administre pelo pc, mac ou tablet.</h3></li>
+                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Histórico de chats.</h3></li>
+                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Respostas automaticas.</h3></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                     <a href="#" class="btn btn-sq-lg btn-success">
+                                         <i class="fa fa-sign-in fa-5x"></i><br/>
+                                            <h4>Login</h4>
+                                    </a>
+                                     <a href="#" class="btn btn-sq-lg btn-success">
+                                         <i class="fa fa-user-plus fa-5x"></i><br/>
+                                            <h4>Registrar</h4>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Video Section Ends Here-->
+
+
+        <div id="custom-bootstrap-menu" class="navbar navbar-default menu menu-sempre-fixo container" style="box-shadow:0 2px 6px rgba(0,0,0,0.5)" role="navigation" >
+
+            <div class="navbar-header" style="max-height:100%;background-color:#28292A; " >
+                <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 0px 20px;margin-top:15px" href="#"><img src="http://helloworldsoft.com/img/logo.png" style="max-height: 100%;">
+                </a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder" style="background:#28292A">
+                <ul class="nav navbar-nav navbar-right hidden-md hidden-lg " style="background:#28292A">
+                    <li><a href="#home-mob" class="opcao-menu ">Sobre</a>
+                    </li>
+
+                    <li><a href="#sobre" class="opcao-menu ">Planos</a>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm list-hover-slide">
+                    <li><a href="#sobre" class="opcao-menu " style="padding: 30px 20px;">Sobre</a>
+                    </li>
+
+                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Funcionalidades</a>
+                    </li>
+
+                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Planos</a>
+                    </li>
+                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Dúvidas?</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+        
+        <section  id="home-mob" class="hidden-lg hidden-md">
+            
+            <div class="container">
+                <h3 class="sub-titulo-mob" style="    padding-top: 70px;">  Smart Zapp sua solução para </h3>
+                <h2 class="titulo-mob">administrar seu relacionamento com o cliente via<strong> Whatsapp!</strong> </h2>
+
+                            <div class="row" style="padding:20px">
+                                <div class="col-xs-6">
+                                    <a href="#" class="btn btn-sq-lg btn-success">
+                                        <i class="fa fa-sign-in fa-5x"></i>
+                                        <br/>
+                                        <h4>Login</h4>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="#" class="btn btn-sq-lg btn-success">
+                                        <i class="fa fa-user-plus fa-5x"></i>
+                                        <br/>
+                                        <h4>Registrar</h4>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+        </section>
+
+
+        <section id="sobre">
+
+            <div class="container">
+                <h1 class="titulo-sobre " id="titulo-sobre">Aprimore o seu engajamento com seus clientes e se diferencie da concorrência.</h1>
+
+                <div class="row" id="porque" style="padding:50px 0px">
+                    <div class="col-md-5">
+                        <!-- begin panel group -->
+                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;">O que fazemos pelo seu negócio?</h2>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                            <!-- panel 1 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h4 class="panel-title">Atenda clientes via whatsapp</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <!-- Tab content goes here -->
+                                        Atenda mais e com menos custos, passar das chamadas telefônicas ao WhatsApp ajuda a reduzir o tempo de resposta do atendimento com o cliente, além da redução de custos significativa que sua empresa irá obter.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / panel 1 -->
+
+                            <!-- panel 2 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="panel-title collapsed">Gestão de chats com clientes</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        <!-- Tab content goes here -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / panel 2 -->
+
+                            <!--  panel 3 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="panel-title">Gerencie o whatsapp pelo seu browser</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        <!-- tab content goes here -->
+                                        Através do Smart Zapp você é capaz de realizar o gerenciamento de contas no WhatsApp, onde o acesso é feito por qualquer navegador web, a partir de um computador ou tablet conectado a Internet, seja Windows, Mac ou Linux!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- panel 4 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab4" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="headingFour"data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h4 class="panel-title">Reduza seu custo com ligações</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        <!-- Tab content goes here -->
+                                        Atenda mais e com menos custos, passar das chamadas telefônicas ao WhatsApp ajuda a reduzir o tempo de resposta do atendimento com o cliente, além da redução de custos significativa que sua empresa irá obter.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / panel 1 -->
+
+                        </div>
+                        <!-- / panel-group -->
+
+                    </div>
+                    <!-- /col-md-4 -->
+
+                    <div class="col-md-7">
+                        <!-- begin macbook pro mockup -->
+                        <div class="md-macbook-pro md-glare">
+                            <div class="md-lid">
+                                <div class="md-camera"></div>
+                                <div class="md-screen">
+                                    <!-- content goes here -->
+                                    <div class="tab-featured-image">
+                                        <div class="tab-content">
+                                            <div class="tab-pane  in active" id="tab1">
+                                                <img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
+                                            </div>
+                                            <div class="tab-pane " id="tab2">
+
+                                                <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="tab3">
+
+                                                <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
+                                            </div>
+                                            <div class="tab-pane fade" id="tab4">
+
+                                                <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md-base"></div>
+                        </div>
+                        <!-- end macbook pro mockup -->
+
+
+
+                    </div>
+                    <!-- / .col-md-8 -->
+                </div>
+                <!--/ .row -->
+            </div>
+
+            <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('img/bg_smartzap.jpg') 0% 0 fixed;background-size:cover">
+                <div style="background:url(img/bg_video.png);height:100%">
+                    <div class="container">
+                        <h1>"Se você criar um caso de amor com seus clientes, eles próprios farão sua publicidade."</h1>
+                        <h5>Philip Kotler</h5>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="container">
+                <div class="row" style="padding:50px 0px" id="porque">
+
+
+                    <div class="col-md-7">
+                        <!-- begin macbook pro mockup -->
+                        <div class="md-macbook-pro md-glare">
+                            <div class="md-lid">
+                                <div class="md-camera"></div>
+                                <div class="md-screen">
+                                    <!-- content goes here -->
+                                    <div class="tab-featured-image">
+                                        <div class="tab-content">
+                                            <div class="tab-pane  in active" id="tab1">
+                                                <img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
+                                            </div>
+                                            <div class="tab-pane " id="tab2">
+
+                                                <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
+
+                                            </div>
+                                            <div class="tab-pane fade" id="tab3">
+
+                                                <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md-base"></div>
+                        </div>
+                        <!-- end macbook pro mockup -->
+
+
+
+                    </div>
+                    <!-- / .col-md-8 -->
+
+
+                    <div class="col-md-5">
+                        <!-- begin panel group -->
+                        <h3 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;">O que nós torna inovadores?</h3>
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                            <!-- panel 1 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="heading01"data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
+                            <h4 class="panel-title">Feito para marketing, vendas e suporte.</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapse01" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading01">
+                                    <div class="panel-body">
+                                        <!-- Tab content goes here -->
+                                        O Smartzapp tem como foco aumentar o engazamento com seus clientes, essa é nossa meta e visão,
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / panel 1 -->
+
+                            <!-- panel 2 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="heading02" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
+                            <h4 class="panel-title collapsed">Amplie sua comunicação</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                    <div class="panel-body">
+                                        <!-- Tab content goes here -->
+                                        Diversos funcionalidades estão disponíveis no Smartzapp, como o envio e recebimento de mensagens, seja de texto, vídeo, imagem, geolocalizaçao, links, criação de grupos, agendamento de tarefas, entre outros.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / panel 2 -->
+
+                            <!--  panel 3 -->
+                            <div class="panel panel-default">
+                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+                                <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
+                        <div class="panel-heading" role="tab" id="heading03"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
+                            <h4 class="panel-title">Tenha controle de todas informações.</h4>
+                        </div>
+                    </span>
+
+                                <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                    <div class="panel-body">
+                                        <!-- tab content goes here -->
+                                        Sim! Com o Smartzapp todas suas mensagens de texto, imagem, audio, video ficam armazenadas na nuvem, assim permitindo maior capacidade de armazenamento e flexibilidade.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / panel-group -->
+
+                    </div>
+                    <!-- /col-md-4 -->
+                </div>
+                <!--/ .row -->
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+        <section id="plano">
+            <div class="container">
+                <h1 class="titulo-sobre " style="">Tudo isso por um investimento justo para o seu negócio.</h1>
+
+
+                <div class="row db-padding-btm db-attached">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="db-wrapper">
+                            <div class="db-pricing-eleven db-bk-color-one">
+                                <div class="price">
+                                    <sup>R$</sup>45
+                                    <small>por mês</small>
+                                </div>
+                                <div class="type">
+                                    Plano Bronze
+                                </div>
+                                <ul>
+
+                                    <li><i class="glyphicon glyphicon-print"></i>1 agente </li>
+                                    <li><i class="glyphicon glyphicon-time"></i>1.000 chats/mês </li>
+                                    <li><i class="glyphicon glyphicon-trash"></i>Historico de chats</li>
+                                </ul>
+                                <div class="pricing-footer">
+
+                                    <a href="#" class="btn db-button-color-square btn-lg">OBTER PLANO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="db-wrapper">
+                            <div class="db-pricing-eleven db-bk-color-two popular">
+                                <div class="price">
+                                    <sup>$</sup>199
+                                    <small>por mês</small>
+                                </div>
+                                <div class="type">
+                                    Plano Prata
+                                </div>
+                                <ul>
+
+                                    <li><i class="glyphicon glyphicon-print"></i>3 Agentes </li>
+                                    <li><i class="glyphicon glyphicon-time"></i>2.000+ chats/mês </li>
+                                    <li><i class="glyphicon glyphicon-trash"></i>Historico de chats</li>
+                                </ul>
+                                <div class="pricing-footer">
+
+                                    <a href="#" class="btn db-button-color-square btn-lg">OBTER PLANO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="db-wrapper">
+                            <div class="db-pricing-eleven db-bk-color-three">
+                                <div class="price">
+                                    <sup>$</sup>249
+                                    <small>por mês</small>
+                                </div>
+                                <div class="type">
+                                    Plano Ouro
+                                </div>
+                                <ul>
+
+                                    <li><i class="glyphicon glyphicon-print"></i>5 Agentes </li>
+                                    <li><i class="glyphicon glyphicon-time"></i>5.000+ chats/mês</li>
+                                    <li><i class="glyphicon glyphicon-trash"></i>Historico de chats</li>
+                                </ul>
+                                <div class="pricing-footer">
+
+                                    <a href="#" class="btn db-button-color-square btn-lg">OBTER PLANO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="db-wrapper">
+                            <div class="db-pricing-eleven db-bk-color-six">
+                                <div class="price">
+                                    <sup>$</sup>599
+                                    <small>por mês</small>
+                                </div>
+                                <div class="type">
+                                    Plano diamante
+                                </div>
+                                <ul>
+
+                                    <li><i class="glyphicon glyphicon-print"></i>10 Agentes </li>
+                                    <li><i class="glyphicon glyphicon-time"></i>Chats ilimitados</li>
+                                    <li><i class="glyphicon glyphicon-trash"></i>Histórico de chats</li>
+                                </ul>
+                                <div class="pricing-footer">
+
+                                    <a href="#" class="btn db-button-color-square btn-lg">OBTER PLANO</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+
+
+        <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('http://coworkingbrasil.org/app/wp-content/uploads/cache/2014/11/foto-salvador1/2863925724.jpg') 0% 0 fixed;background-size:cover">
+            <div style="background:url(img/bg_video.png);height:100%">
+                <div class="container">
+                    <h1>"Um cliente satisfeito é a melhor estratégia de negócios de todas."</h1>
+                    <h5>Micheal LeBoeuf</h5>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="duvidas" style="padding:50px 0px;">
+            <div class="container">
+                <h1 class="titulo-sobre ">Com dúvidas? Veja aqui as principais perguntas</h1>
+
+
+                <div class="panel-group" id="accordion" style="padding-top:30px">
+                    <div class="panel panel-default">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseUm">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+        
+         Como funciona a Smartzapp?
+       <i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+      </h4>
+                            </div>
+                        </a>
+                        <div id="collapseUm" class="panel-collapse collapse in">
+                            <div class="panel-body ">
+                                Pode enviar mensagens apenas aos números que lhe escrevem primeiro. O Smartzapp funciona desta maneira porque tanto as mensagens indesejadas como o spam não são permitidos pelos termos e condições de uso da WhatsApp, e a Smartzapp não deseja em momento nenhum que o número de sua empresa seja bloqueado pela WhatsApp.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseDois">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+       
+           Como faço para ativar o meu número?
+        <i class="indicator glyphicon glyphicon-chevron-up  pull-right"></i>
+      </h4>
+                            </div>
+                        </a>
+                        <div id="collapseDois" class="panel-collapse collapse">
+                            <div class="panel-body ">
+                                Vai precisar de um número de celular e de um cartão SIM para esse número . Irá receber um código de verificação por SMS que devera introduzir no painel admistrador do Smartzapp para ativar o número.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTres">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+       
+          Posso activar um número de qualquer país?
+        <i class="indicator glyphicon glyphicon-chevron-up pull-right"></i>
+      </h4>
+                            </div>
+                        </a>
+                        <div id="collapseTres" class="panel-collapse collapse">
+                            <div class="panel-body ">
+                                Claro. Pode ativar qualquer número, desde que esse seja de sua propriedade.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer style="padding:50px 0px" id="footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="container">
+
+
+                            <div class="col-lg-3">
+                                <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                    <p style="text-align:center; margin-top:20px;">
+                                        <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                                    <p style="text-align:center; margin-top:20px;">
+                                        <img src="http://placehold.it/500x330" class="img-responsive" alt="">
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-lg-3 col-md-6">
+                                <h3>Categories</h3>
+                                <ul>
+                                    <li><a href=""><i class="fa fa-file"></i> Home</a>
+                                    </li>
+                                    <li><a href=""><i class="fa fa-android"></i> Termos e condições</a>
+                                    </li>
+                                    <li><a href="" title="Contact me!"><i class="fa fa-envelope"></i> contato@smartzapp.com</a> </a>
+                                    </li>
+                                    <li><a href=""><i class="fa fa-phone"></i> (79) 9924-5550</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <h3>Contato</h3>
+                                <p>Alguma dúvida? Fique tranquilo que nossa equipe responde rapidinho</p>
+
+                                <h3>Siga-nos:</h3>
+
+
+                                <a href="" id="gh" target="_blank" title="Twitter"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-twitter fa-stack-1x"></i>
+</span>
+Twitter</a>
+                                <a href="" target="_blank" title="Linedin"><span class="fa-stack fa-lg">
+  <i class="fa fa-square-o fa-stack-2x"></i>
+  <i class="fa fa-linkedin fa-stack-1x"></i>
+</span>
+Linkedin</a>
+
+
+
+
+
+
+                            </div>
+                            <br/>
+                            <div id="fb-root"></div>
+                            <script>
+                                (function (d, s, id) {
+                                    var js, fjs = d.getElementsByTagName(s)[0];
+                                    if (d.getElementById(id)) return;
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.0";
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }(document, 'script', 'facebook-jssdk'));
+                            </script>
+
+                            <div class="fb-like" data-href="" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+
+
+                            <div class="g-plusone" data-annotation="inline" data-width="300" data-href=""></div>
+
+                            <!-- Helyezd el ezt a címkét az utolsó +1 gomb címke mögé. -->
+                            <script type="text/javascript">
+                                (function () {
+                                    var po = document.createElement('script');
+                                    po.type = 'text/javascript';
+                                    po.async = true;
+                                    po.src = 'https://apis.google.com/js/platform.js';
+                                    var s = document.getElementsByTagName('script')[0];
+                                    s.parentNode.insertBefore(po, s);
+                                })();
+                            </script>
+
+        </footer>
+        <section id="rodape">
+
+            <div class="container" style="padding-top:10px">
+
+                <p><a class="caju" href="http://andreywallace.github.io/presetantion-caju-valley/" target="_blank">Made in Caju Valley </a> </p>
+            </div>
+
+            </div>
+
+
+
+            <!-- Bootstrap Core JS -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+            <!-- Core JavaScript Files -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <!-- Custom Theme JavaScript -->
+            <script src="js/custom.js"></script>
+
+</body>
+
+
+
+
+
+
+</html>

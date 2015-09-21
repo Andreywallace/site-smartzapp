@@ -1,0 +1,650 @@
+.background-video {
+    -webkit-filter: grayscale(85%);
+}
+
+#home-mob {
+    background-image: url('http://www.dgbrt.fr/images/patt-custom-4c.jpg');
+    margin-top: 40px;
+}
+
+.logo,
+.intro,
+.menu,
+.content {
+    padding: 0px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.menu {
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.menu-padding {
+    padding-top: 200px;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/* VIDEO BACKGROUND INICIAL*/
+
+.video-section .pattern-overlay {
+    /* background-color: rgba(71, 71, 71, 0.59); */
+    
+    padding: 110px 0 32px;
+    min-height: 540px;
+    /* Incase of overlay problems just increase the min-height*/
+    
+    background-image: url('http://helloworldsoft.com/img/bg_video.png');
+}
+
+@media (min-width: 769px) {
+    .video-section .pattern-overlay {
+        min-height: 540px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-section .pattern-overlay {
+        max-height: 100%;
+    }
+    .menu-sempre-fixo {
+        position: fixed;
+        top: 0;
+    }
+}
+
+.video-section h1,
+.video-section h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.video-section h1 {
+    font-size: 110px;
+    font-family: 'Buenard', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px auto 0px;
+    text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+}
+
+.video-section h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 0px auto 15px;
+}
+
+.video-section .buttonBar {
+    display: none;
+}
+
+.player {
+    font-size: 1px;
+}
+/* FIM VIDEO BACKGROUND INICIAL*/
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Set the fixed height of the footer here */
+
+.footer {
+    padding-top: 5px;
+    background-color: black;
+}
+
+.footer a {
+    color: #39aa49;
+}
+
+.footer span {
+    color: white;
+}
+
+.footer a:hover {
+    color: #d71f26;
+    text-decoration: none;
+}
+/* Custom page CSS
+-------------------------------------------------- */
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+
+#custom-bootstrap-menu.navbar-default {
+    font-size: 16px;
+    z-index: 100;
+    background-color: transparent;
+    border-width: 0px;
+    border-radius: 0px;
+    font-family: 'Nunito', sans-serif !important;
+    text-transform: uppercase;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: #BDBDBD;
+    background-color: #28292A;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: white;
+    /* box-shadow: 0px 10px 5px #888, 0px -10px 5px #888; */
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(91, 66, 61, 1);
+    border-bottom: 10px solid red;
+    background-color: rgba(231, 231, 231, 1);
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #b8a48d;
+}
+
+.margin-top-fluid {
+    margin-top: 60px !important;
+}
+
+.titulo {
+    color: white;
+    font-size: 4.2em;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.titulo-mob {
+    color: #463d40;
+    font-size: 2.0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sub-titulo-mob {
+    color: #463d40;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+.sub-titulo {
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2em;
+}
+
+.titulo-ul {
+    text-shadow: 1px 1px 1px #000;
+    font-size: 1.7em;
+    color: white;
+}
+
+.titulo strong,
+.sub-titulo strong {
+    color: #00a676;
+}
+
+.btn-sq-lg {
+    width: 130px !important;
+    height: 130px !important;
+}
+
+.btn-sq {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 10px;
+}
+
+.btn-sq-sm {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 10px;
+}
+
+.btn-sq-xs {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+    .linha-ul {
+        padding-top: 130px;
+    }
+}
+
+#container .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -20px 0px;
+    width: 100%;
+    padding: 120px 0;
+}
+
+#parallaxBar {
+    height: 250px;
+    background-color: #004c82;
+    background-size: cover;
+    background: url('../img/bg_smartzap.jpg')0% fixed;
+}
+
+#parallaxBar h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3.5em;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 0 1px 0 #0A0C0C;
+}
+
+#parallaxBar h5 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 0 #0A0C0C;
+}
+/* Menu Inline slide*/
+
+.list-hover-slide>li {
+    position: relative;
+    overflow: hidden;
+}
+
+.list-hover-slide>li>a {
+    z-index: 1;
+    transition: .35s ease color;
+}
+
+.list-hover-slide>li>a:before,
+.list-hover-slide>li.dropdown.open>a:before {
+    content: '';
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    border-top: solid 5px #00a676;
+    border-bottom: solid 5px #00a676;
+    color: white;
+    background: transparent;
+    transition: .35s ease transform;
+}
+
+.list-hover-slide>li>a:hover:before,
+.list-hover-slide>li.dropdown.open>a:before {
+    transform: translateX(0);
+}
+
+.list-hover-slide>li.dropdown.open {
+    overflow: initial;
+}
+/* FIM Menu Inline slide*/
+
+.btn.btn-success {
+    background: #00a676;
+    /* Old browsers */
+    
+    background: -moz-linear-gradient(top, #00a676 1%, #00a676 23%, #008c72 99%);
+    /* FF3.6+ */
+    
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00a676), color-stop(23%, #00a676), color-stop(99%, #008c72));
+    /* Chrome,Safari4+ */
+    
+    background: -webkit-linear-gradient(top, #00a676 1%, #00a676 23%, #008c72 99%);
+    /* Chrome10+,Safari5.1+ */
+    
+    background: -ms-linear-gradient(top, #00a676 1%, #00a676 23%, #008c72 99%);
+    /* IE10+ */
+    
+    background: linear-gradient(to bottom, #00a676 1%, #00a676 23%, #008c72 99%);
+    /* W3C */
+    
+    border-color: #008C72;
+    text-shadow: 0 1px 0 #007369;
+    color: #fff !important;
+    font-size: 13pt;
+}
+
+.btn.btn-success:hover {
+    background: #00a676;
+}
+/*MACBOOK*/
+
+.panel-heading:hover {
+    cursor: pointer;
+}
+
+.panel-heading {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.side-tab:hover {
+    cursor: pointer;
+}
+
+.panel.panel-default {
+    border: none;
+    box-shadow: none !important;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.panel-heading {
+    border: none;
+    background-color: #009c67;
+    color: white;
+}
+
+.panel-body {
+    background-color: #105A45;
+    color: white;
+    text-align: justify;
+}
+
+.panel-title {
+    font-weight: 400;
+    color: $white;
+}
+/*----------------------------------
+    Macbook pro mockup from:
+    http://jaredhardy.com/minimal-devices/
+    
+----------------------------------*/
+
+.md-macbook-pro {
+    display: block;
+    width: 50.3125em;
+    height: 31.875em;
+    font-size: 13px;
+    margin: 0 auto;
+    @media (max-width: 1199px) {
+        font-size: 11px;
+    }
+    @media (max-width: 1024px) {
+        font-size: 10px;
+    }
+    @media (max-width: 767px) {
+        font-size: 7px;
+    }
+    @media (max-width: 320px) {
+        font-size: 5px;
+    }
+}
+
+.md-macbook-pro .md-lid {
+    width: 45em;
+    height: 30.625em;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 1.875em;
+    border: solid 0.1875em #cdced1;
+    background: #131313;
+}
+
+.md-macbook-pro .md-camera {
+    width: 0.375em;
+    height: 0.375em;
+    margin: 0 auto;
+    position: relative;
+    top: 1.0625em;
+    background: #000;
+    border-radius: 100%;
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.md-macbook-pro .md-camera:after {
+    content: "";
+    display: block;
+    width: 0.125em;
+    height: 0.125em;
+    position: absolute;
+    left: 0.125em;
+    top: 0.0625em;
+    background: #353542;
+    border-radius: 100%;
+}
+
+.md-macbook-pro .md-screen {
+    width: 42.25em;
+    height: 26.375em;
+    margin: 0 auto;
+    position: relative;
+    top: 2.0625em;
+    // background: #1d1d1d;
+    background: #fff;
+    overflow: hidden;
+}
+
+.panel-title {
+    font-size: 22px;
+}
+
+.md-macbook-pro .md-screen img {
+    width: 100%;
+}
+
+.md-macbook-pro .md-base {
+    width: 100%;
+    height: 0.9375em;
+    position: relative;
+    top: -0.75em;
+    background: #c6c7ca;
+}
+
+.md-macbook-pro .md-base:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.5em;
+    margin: 0 auto;
+    position: relative;
+    bottom: -0.1875em;
+    background: #b9babe;
+    border-radius: 0 0 1.25em 1.25em;
+}
+
+.md-macbook-pro .md-base:before {
+    content: "";
+    display: block;
+    width: 7.6875em;
+    height: 0.625em;
+    margin: 0 auto;
+    position: relative;
+    background: #a6a8ad;
+    border-radius: 0 0 0.625em 0.625em;
+}
+
+.md-macbook-pro.md-glare .md-lid:after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 1.25em 0 0;
+    background: -webkit-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: -moz-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: -o-linear-gradient(37deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+    background: linear-gradient(53deg, rgba(255, 255, 255, 0) 50%, rgba(247, 248, 240, 0.025) 50%, rgba(250, 245, 252, 0.08));
+}
+/* FIM MACBOOK*/
+
+.titulo-sobre {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center
+}
+
+.titulo-sobre-2 {
+    padding-top: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+    .titulo-sobre {
+        padding-bottom: 0px;
+    }
+}
+/* Fim MACBOOK*/
+/* RODAPÉ*/
+
+.cuadro_intro_hover {
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.cuadro_intro_hover:hover .caption {
+    opacity: 1;
+    transform: translateY(-150px);
+    -webkit-transform: translateY(-150px);
+    -moz-transform: translateY(-150px);
+    -ms-transform: translateY(-150px);
+    -o-transform: translateY(-150px);
+}
+
+.cuadro_intro_hover img {
+    z-index: 4;
+}
+
+.cuadro_intro_hover .caption {
+    position: absolute;
+    top: 150px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.cuadro_intro_hover .blur {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 300px;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+}
+
+.cuadro_intro_hover .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    height: 300px;
+    text-align: center;
+    top: -20px;
+    width: 100%;
+}
+
+#rodape {
+    background-color: #013E33;
+}
+
+#rodape p {
+    color: white;
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    color: #f2f2f2;
+    font-weight: 600;
+}
+
+#footer ul {
+    list-style-type: none;
+}
+
+#footer li {
+    padding: 4px 0px;
+}
+
+
+#footer{
+background-color: #073324;
+}
+
+
+
+#footer a:hover {
+    color: white;
+        font-weight: 600;
+}
+
+#footer a , #footer p, #footer h3 {
+    padding: 5px 10px;
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+
+#duvidas a{
+text-decoration: none;
+}
+
+
+.panel-body-custom{
+background-color: white;
+    color:black;
+  
+}
