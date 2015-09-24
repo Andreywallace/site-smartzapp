@@ -295,7 +295,7 @@ body {
 
 @media screen and (min-width: 1200px) {
     .linha-ul {
-        padding-top: 130px;
+        padding-top: 100px;
     }
 }
 
@@ -687,7 +687,7 @@ body {
 /*CaRD Funcionalidades*/
 
 .notice {
-    padding: 15px;
+    padding: 2px 15px;
     background-color: #fafafa;
     border-left: 10px solid #353535;
     margin-bottom: 10px;

@@ -63,8 +63,8 @@ PRICING STYLES
     }
 
         .db-pricing-eleven ul li {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             cursor: pointer;
         }
 
@@ -75,8 +75,8 @@ PRICING STYLES
 
     .db-pricing-eleven .price {
         background-color: rgba(0, 0, 0, 0.5);
-        padding: 40px 20px 20px 20px;
-        font-size: 60px;
+        padding: 40px 10px 20px 10px;
+        font-size: 50px;
         font-weight: 900;
         color: #FFFFFF;
     }

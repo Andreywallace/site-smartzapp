@@ -123,10 +123,17 @@ $(function () {
     $('#porque').css({
         'min-height': $(window).innerHeight() - 100
     });
+      $('#video-section').css({
+            'max-height': $(window).innerHeight()
+        });
 
     $(window).resize(function () {
         $('#porque').css({
-            'min-height': $(window).innerHeight() - 100
+            'min-height': $(window).innerHeight()-100
+        });
+        
+         $('#video-section').css({
+            'max-height': $(window).innerHeight()
         });
     });
 });
