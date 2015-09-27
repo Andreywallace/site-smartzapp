@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Smart Zapp - Gestor de atendimento por whatsapp</title>
+    <title>SmartZapp - Gestor de atendimento por whatsapp</title>
     <link rel="icon" href="img/favicon.png">
 
 
@@ -41,7 +41,9 @@
     <!-- CSS -->
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link href="css/planos.css" rel="stylesheet" type="text/css">
-
+    <link href="css/cartao.css" rel="stylesheet" type="text/css">
+    <link href="css/animations-ie-fix.css" rel="stylesheet" type="text/css">
+    <link href="css/animations.css" rel="stylesheet" type="text/css">
 
 
 
@@ -54,34 +56,34 @@
     <header>
 
         <!--Video Section-->
-        <section class="content-section  hidden-xs  " id="video-section">
+        <section class="content-section  hidden-xs  ">
             <div id="container">
-                <video autoplay loop muted class="background-video">
+                <video autoplay loop muted class="background-video" id="video-section">
                     <source src="video/WorkingSpace.mp4" type="video/mp4">
-                        <source src="video/flowers.webm" type="video/webm">
+
                 </video>
 
-                <div class="content ">
+                <div class="content animatedParent">
                     <div class="container">
                         <div class="container col-lg-12">
-                            <h2 class="sub-titulo">Smart Zapp é um software com focado na</h3>
-                            <h1 class="titulo">Gestão de Atendimento ao Cliente Via <strong> WhatsApp!</strong></h1>
-                           
+                            <h2 class="sub-titulo animated bounceInLeft">SmartZapp é um software com foco na</h3>
+                            <h1 class="titulo animated bounceInRight">Gestão de Atendimento ao Cliente Via <strong> WhatsApp!</strong></h1>
+        
                             <div class="row linha-ul">
                                 <div class="col-sm-6">
                                     <ul class="fa-ul titulo-ul">
-                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Plataforma 100% online</h3></li>
-                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Envio de mensagens em lote</h3></li>
-                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Histórico de chats</h3></li>
-                                        <li><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Múltiplos agentes</h3></li>
+                                        <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Plataforma 100% online</h3></li>
+                                        <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Envio de mensagens em lote</h3></li>
+                                        <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Histórico de chats</h3></li>
+                                        <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Múltiplos agentes</h3></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6 ">
-                                     <a href="#" class="btn btn-sq-lg btn-success">
+                                     <a href="#" class="btn btn-sq-lg btn-success animated fadeIn">
                                          <i class="fa fa-sign-in fa-5x"></i><br/>
                                             <h4>Login</h4>
                                     </a>
-                                     <a href="#" class="btn btn-sq-lg btn-success">
+                                     <a href="#contacte" class="btn btn-sq-lg btn-success   animated fadeIn">
                                          <i class="fa fa-user fa-5x"></i><br/>
                                             <h4>Contato</h4>
                                     </a>
@@ -94,12 +96,12 @@
         <!--Video Section Ends Here-->
 
 
-        <div id="custom-bootstrap-menu" class="navbar navbar-default menu menu-sempre-fixo container" style="box-shadow:0 2px 6px rgba(0,0,0,0.5);background:#28292A;" role="navigation" >
+        <nav id="custom-bootstrap-menu" role="navigation" class="navbar navbar-default menu menu-sempre-fixo container" style="box-shadow:0 2px 6px rgba(0,0,0,0.5);background:#28292A;"  >
 
              <div class="container">
             <div class="navbar-header" style="max-height:100%;background-color:#28292A; " >
                
-                <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 0px 20px;margin-top:15px" href="#"><img src="img/favicon.png" style="max-height: 100%;">
+                <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 0px 20px;margin-top:15px;margin-bottom: 15px;" href="#"><img src="img/favicon.png" style="max-height: 100%;">
                 </a>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -116,21 +118,25 @@
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm list-hover-slide">
-                    <li><a href="#sobre" class="opcao-menu " style="padding: 30px 20px;">Sobre</a>
+                    <li><a href="#sobre" class="opcao-menu" style="padding: 30px 20px;" >Sobre</a>
                     </li>
 
-                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Funcionalidades</a>
+                    
+                    <li><a href="#areas" class="opcao-menu" style="padding: 30px 20px;">Áreas de atuação</a>
+                    </li>
+                    
+                    <li><a href="#funcionalidades" class="opcao-menu" style="padding: 30px 20px;">Funcionalidades</a>
                     </li>
 
-                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Planos</a>
+                    <li><a href="#planos" class="opcao-menu" style="padding: 30px 20px;">Planos</a>
                     </li>
-                    <li><a href="#planos" class="opcao-menu " style="padding: 30px 20px;">Dúvidas?</a>
+                    <li><a href="#duvidas" class="opcao-menu" style="padding: 30px 20px;">Dúvidas?</a>
                     </li>
     
                 </ul>
             </div>
             </div>
-        </div>
+        </nav>
 
 
     </header>
@@ -142,14 +148,14 @@
                 <h2 class="titulo-mob">administrar seu relacionamento com o cliente via<strong> Whatsapp!</strong> </h2>
 
                             <div class="row" style="padding:20px">
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 col-xs-offset-3">
                                     <a href="#" class="btn btn-sq-lg btn-success">
                                         <i class="fa fa-sign-in fa-5x"></i>
                                         <br/>
                                         <h4>Login</h4>
                                     </a>
                                 </div>
-                                <div class="col-xs-12">
+                                <div class="col-xs-12 col-xs-offset-3" style="padding-top:20px">
                                     <a href="#" class="btn btn-sq-lg btn-success">
                                         <i class="fa fa-user-plus fa-5x"></i>
                                         <br/>
@@ -165,21 +171,21 @@
 
         <section id="sobre">
 
-            <div class="container">
-                <h1 class="titulo-sobre " id="titulo-sobre">Melhore o relacionamento com os seus clientes e se diferencie da concorrência.</h1>
+            <div class="container animatedParent">
+                <h1 class="titulo-sobre animated flipInX" id="titulo-sobre">Melhore o relacionamento com os seus clientes e se diferencie da concorrência.</h1>
 
-                <div class="row" id="porque" style="padding:50px 0px">
+                <div class="row " id="porque" style="padding:50px 0px">
                     <div class="col-md-5">
                         <!-- begin panel group -->
-                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;">O que fazemos pelo seu negócio?</h2>
+                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;" class="animated fadeInLeft">O que fazemos pelo seu negócio?</h2>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                             <!-- panel 1 -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default animated fadeInUp">
                                 <!--wrap panel heading in span to trigger image change as well as collapse -->
                                 <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <h4 class="panel-title">Atenda clientes via WhatsApp</h4>
+                        <div class="panel-heading " role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h4 class="panel-title ">Atenda clientes via WhatsApp</h4>
                         </div>
                     </span>
                                 <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
@@ -192,10 +198,10 @@
                             <!-- / panel 1 -->
 
                             <!-- panel 2 -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default animated fadeInUp">
                                 <!--wrap panel heading in span to trigger image change as well as collapse -->
                                 <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="panel-heading " role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h4 class="panel-title collapsed">Gestão de chats com clientes</h4>
                         </div>
                     </span>
@@ -210,10 +216,10 @@
                             <!-- / panel 2 -->
 
                             <!--  panel 3 -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default animated fadeInUp">
                                 <!--wrap panel heading in span to trigger image change as well as collapse -->
                                 <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="panel-heading " role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h4 class="panel-title">Gerencie o whatsapp pelo navegador</h4>
                         </div>
                     </span>
@@ -227,10 +233,10 @@
                             </div>
 
                             <!-- panel 4 -->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default animated fadeInUp">
                                 <!--wrap panel heading in span to trigger image change as well as collapse -->
                                 <span class="side-tab" data-target="#tab4" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="headingFour"data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <div class="panel-heading " role="tab" id="headingFour"data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <h4 class="panel-title">Reduza seu custo com ligações</h4>
                         </div>
                     </span>
@@ -252,7 +258,7 @@
 
                     <div class="col-md-7 hidden-sm	 hidden-xs">
                         <!-- begin macbook pro mockup -->
-                        <div class="md-macbook-pro md-glare">
+                        <div class="md-macbook-pro md-glare animated growIn">
                             <div class="md-lid">
                                 <div class="md-camera"></div>
                                 <div class="md-screen">
@@ -291,157 +297,370 @@
                 <!--/ .row -->
             </div>
 
-
-            <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('img/bg_smartzap.jpg') 0% 0 fixed;background-size:cover">
-                <div style="background:url(img/bg_video.png);height:100%">
-                    <div class="container">
-                        <h1>"Se você criar um caso de amor com seus clientes, eles próprios farão sua publicidade."</h1>
-                        <h5>Philip Kotler</h5>
-                    </div>
+        </section>
+        <section id="parallaxBar" class="hidden-xs animatedParent" data-speed="6" style="background: url('img/bg_smartzap.jpg') 0% 0 fixed;background-size:cover">
+            <div style="background:url(img/bg_video.png);height:100%">
+                <div class="container">
+                    <h1 class="animated flipInX">"Se você criar um caso de amor com seus clientes, eles próprios farão sua publicidade."</h1>
+                    <h5 class="animated flipInX">Philip Kotler</h5>
                 </div>
-            </section>
-
-
-
-            <div class="container">
-                <div class="row" style="padding:50px 0px" id="porque">
-
-
-                    <div class="col-md-7 hidden-sm	 hidden-xs">
-                        <!-- begin macbook pro mockup -->
-                        <div class="md-macbook-pro md-glare">
-                            <div class="md-lid">
-                                <div class="md-camera"></div>
-                                <div class="md-screen">
-                                    <!-- content goes here -->
-                                    <div class="tab-featured-image">
-                                        <div class="tab-content">
-                                            <div class="tab-pane  in active" id="tab1">
-                                                <img src="https://ununsplash.imgix.net/photo-1417024321782-1375735f8987?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
-                                            </div>
-                                            <div class="tab-pane " id="tab2">
-
-                                                <img src="https://unsplash.imgix.net/uploads/1411724908903377d4696/2e9b0cb2?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950">
-
-                                            </div>
-                                            <div class="tab-pane fade" id="tab3">
-
-                                                <img src="https://ununsplash.imgix.net/photo-1422479516648-9b1f0b6e8da8?dpr=2&fit=crop&fm=jpg&h=650&q=75&w=950" alt="tab1" class="img img-responsive">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="md-base"></div>
-                        </div>
-                        <!-- end macbook pro mockup -->
-
-
-
-                    </div>
-                    <!-- / .col-md-8 -->
-
-
-                    <div class="col-md-5 	 ">
-                        <!-- begin panel group -->
-                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;">Por que utilizar o SmartZapp?</h2>
-                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-
-                            <!-- panel 1 -->
-                            <div class="panel panel-default">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
-                                <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="heading01"data-toggle="collapse" data-parent="#accordion" href="#collapse01" aria-expanded="false" aria-controls="collapse01">
-                            <h4 class="panel-title">Feito para marketing, vendas e suporte.</h4>
-                        </div>
-                    </span>
-
-                                <div id="collapse01" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading01">
-                                    <div class="panel-body">
-                                        <!-- Tab content goes here -->
-                                        O Smartzapp tem como foco aumentar o engazamento com seus clientes, essa é nossa meta e visão,
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- / panel 1 -->
-
-                            <!-- panel 2 -->
-                            <div class="panel panel-default">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
-                                <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="heading02" data-toggle="collapse" data-parent="#accordion" href="#collapse02" aria-expanded="false" aria-controls="collapse02">
-                            <h4 class="panel-title collapsed">Amplie sua comunicação</h4>
-                        </div>
-                    </span>
-
-                                <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
-                                    <div class="panel-body">
-                                        <!-- Tab content goes here -->
-                                        Diversos funcionalidades estão disponíveis no Smartzapp, como o envio e recebimento de mensagens, seja de texto, vídeo, imagem, geolocalizaçao, links, criação de grupos, agendamento de tarefas, entre outros.
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- / panel 2 -->
-
-                            <!--  panel 3 -->
-                            <div class="panel panel-default">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
-                                <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
-                        <div class="panel-heading" role="tab" id="heading03"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse03" aria-expanded="false" aria-controls="collapse03">
-                            <h4 class="panel-title">Tenha controle de todas informações.</h4>
-                        </div>
-                    </span>
-
-                                <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
-                                    <div class="panel-body">
-                                        <!-- tab content goes here -->
-                                        Sim! Com o Smartzapp todas suas mensagens de texto, imagem, audio, video ficam armazenadas na nuvem, assim permitindo maior capacidade de armazenamento e flexibilidade.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / panel-group -->
-
-                    </div>
-                    <!-- /col-md-4 -->
-                </div>
-                <!--/ .row -->
             </div>
         </section>
 
 
-        <section id="funcionalidades" class="cta cta-secondary">
+        <section id="areas">
+            <div class="container animatedParent">
+                <div class="row " style="padding:50px 0px" id="porque">
+                    <h1 class="titulo-sobre animated bounceInLeft">Áreas de Atuação</h1>
+                    <h3 style="text-align:center;margin-top: 0px;" class="animated bounceInRight">Confira os principais modelos de negócios que buscamos ajudar.</h3>
+
+                    
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn" data-id='1' >
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/agencia.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Agências</span>
+                                <button type="button" id="showAgencia" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-agencia">
+                                <span class="card-title">Agências</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Gerencie eventos, desenvolva promoções, convide pessoas para eventos, envie cupom de descontos, amplie a base de relacionamento dos seus clientes.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn" data-id='2'>
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/celular.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Varejo</span>
+                                <button type="button" id="showVarejo" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-varejo">
+                                <span class="card-title">Varejo</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Desenvolva campanhas de vendas, controle de estoque e logística, informações de promoções e ajude seu cliente a obter informações automáticas diretamente do seu smartphone.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn" data-id='3'>
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/clinica.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Clínicas e Saúde</span>
+                                <button type="button" id="showClinica" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-clinica">
+                                <span class="card-title">Clínicas e Saúde</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Envie avisos de confirmação de consultas, entrega de exames, avisos críticos, divulgação de novos equipamentos, etc, do computador direto para o seu paciente via WhatsApp.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/class.jpeg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Educação</span>
+                                <button type="button" id="showEducacao" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-educacao">
+                                <span class="card-title">Educação</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Faça sua escola ou universidade usar o whatsapp para bem. Através de uma conexão rápida, simples e eficaz mantenha um relacionamento ainda mais próximo dos seus alunos e colaboradores.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/Logistica.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Logística.</span>
+                                <button type="button" id="showLog" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-log">
+                                <span class="card-title">Logística.</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Gerencia transportes e logística é um desafio para qualquer negócio. O Whatsapp é a solução para se relacionar de foma simples com o público, incentivar uma boa iteração e elevar sua empresa a um melhor patamar de produtivo.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/hairstyle.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Salão de estética</span>
+                                <button type="button" id="showStyle" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-style">
+                                <span class="card-title">Salão de estética</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Envie seu cardápio e promoções com imagens, vídeos e áudios direto para o smartphone do seu cliente. Gerencie pedidos diretamente no seu celular em contato direto com seu consumidor.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/food.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Gastronomia</span>
+                                <button type="button" id="showFood" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-food">
+                                <span class="card-title">Gastronomica</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Envie seu cardápio e promoções com imagens, vídeos e áudios direto para o smartphone do seu cliente. Gerencie pedidos diretamente no seu celular em contato direto com seu consumidor.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/party.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Festas e eventos</span>
+                                <button type="button" id="showParty" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-party">
+                                <span class="card-title">Festa e eventos</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>O Smartzapp possui um plano específico para ajuda-lo durante a organização de um evento. Entre em contato com o nosso time e descubra como gerenciar com mais qualidade, praticidade e eficiência o seu evento.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/seguradora.png">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Seguradora</span>
+                                <button type="button" id="showSeguradora" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-seguradora">
+                                <span class="card-title">Seguradora</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Acompanhe a agilidade do seu setor e melhore ainda mais sua comunicação com os clientes de sua empresa. Envie notificações, alertas e promoções para todos seus segurados com poucos cliques.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/coorp.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Corporativo</span>
+                                <button type="button" id="showCorp" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-corp">
+                                <span class="card-title">Corporativo</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Use o melhor do whatsapp aplicando no dia a dia da sua empresa para trafegar todos os tipos de informação: avisos, alertas, lembretes, indicadores, de venda, status de pedidos ou processos e autorizações, etc.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/rede.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Coworking</span>
+                                <button type="button" id="showServico" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-servico">
+                                <span class="card-title">Coworking</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>Informe todos os seus clientes, sobre as promoções, eventos ações presentes no seu escritório compartilhado.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-12">
+                        <div class="card animated fadeIn">
+                            <div class="card-image">
+                                <img class="img-responsive" src="img/areas/pet.jpg">
+
+                            </div>
+
+
+                            <div class="card-content">
+                                <span class="card-title">Pet Shop</span>
+                                <button type="button" id="showPet" class="btn btn-custom pull-right" aria-label="Left Align">
+                                    <i class="fa fa-ellipsis-v"></i>
+                                </button>
+                            </div>
+
+                            <div class="card-reveal" id="card-pet">
+                                <span class="card-title">Pet Shop</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <p>informe os seus clientes de todos os contatos que seus animais precisam, informe sobre as campanhas de vacinação, feiras e demais atividades que seu Pet Shop tem a oferecer.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="funcionalidades" class="cta cta-secondary  animatedParent">
             <div class="container">
-                <h1 style="text-align:center"> Descubra as nossas funcionalidades</h1>
+                <h1 style="text-align:center" class="animated fadeInLeft"> Descubra as nossas funcionalidades</h1>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Envio de mensagens em lote</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Gerenciamentos de campanhas</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Chats online </h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Cadastro ilimitado de chips</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Múltiplos agentes</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Filtro de contatos</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Permite criar modelos de mensagens</h4>
                         </div>
-                        <div class="notice ">
+                        <div class="notice animated fadeInUp">
                             <h4>Histórico de mensagens</h4>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="img/pc_work.jpg">
+                        <img src="img/pc_work.jpg" class="animated growIn">
                     </div>
                 </div>
 
@@ -451,12 +670,12 @@
 
 
 
-        <section id="plano">
-            <div class="container">
-                <h1 class="titulo-sobre " style="">Tudo isso por um investimento justo para o seu negócio.</h1>
+        <section id="planos">
+            <div class="container animatedParent">
+                <h1 class="titulo-sobre animated fadeInLeft" style="">Tudo isso por um investimento justo para o seu negócio.</h1>
 
 
-                <div class="row db-padding-btm db-attached">
+                <div class="row db-padding-btm db-attached animated fadeInUp">
                     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
                         <div class="db-wrapper">
                             <div class="db-pricing-eleven db-bk-color-one">
@@ -546,33 +765,33 @@
         </section>
 
 
-        <section id="parallaxBar" class="hidden-xs" data-speed="6" style="background: url('http://coworkingbrasil.org/app/wp-content/uploads/cache/2014/11/foto-salvador1/2863925724.jpg') 0% 0 fixed;background-size:cover">
+        <section id="parallaxBar" class="hidden-xs animatedParent" data-speed="6" style="background: url('http://coworkingbrasil.org/app/wp-content/uploads/cache/2014/11/foto-salvador1/2863925724.jpg') 0% 0 fixed;background-size:cover">
             <div style="background:url(img/bg_video.png);height:100%">
-                <div class="container">
-                    <h1>"Um cliente satisfeito é a melhor estratégia de negócios de todas."</h1>
-                    <h5>Micheal LeBoeuf</h5>
+                <div class="container ">
+                    <h1 class="animated flipInX">"Um cliente satisfeito é a melhor estratégia de negócios de todas."</h1>
+                    <h5 class="animated flipInX">Micheal LeBoeuf</h5>
                 </div>
             </div>
         </section>
 
-        <section id="contacte" class="cta cta-secondary">
-            <div class="container">
-                <h1>E aí, pronto para começar? Entre em contato.</h1>
+        <section id="contacte" class="cta cta-secondary animatedParent">
+            <div class="container ">
+                <h1 class="animated fadeInUp">E aí, pronto para começar? Entre em contato.</h1>
 
                 <!--Posar codis de conversió-->
                 <form class="row" action="/en/signup" method="post">
-                    <div class="col-md-3 col-md-offset-2 col-sm-4">
+                    <div class="col-md-3 col-md-offset-2 col-sm-4 animated fadeInLeft">
                         <input type="text" class="form-control" placeholder="Seu nome" name="snname">
                     </div>
-                    <div class="col-md-3 col-sm-4">
+                    <div class="col-md-3 col-sm-4 animated fadeInRight">
                         <input type="text" class="form-control" placeholder="Email comercial" name="snemail">
                     </div>
-                    <div class="col-md-3 col-sm-4">
+                    <div class="col-md-3 col-sm-4 animated fadeInRight">
                         <button type="submit" class="btn db-button-color-square " name="cmdSignup" value="1"><strong>Enviar email</strong>
                         </button>
                     </div>
                 </form>
-                <div class="text-center" style="color:white;padding:20px 0px">Em poucos instantes nossa equipe irá entrar em contato com você.
+                <div class="text-center animated fadeInUp" style="color:white;padding:20px 0px">Em poucos instantes nossa equipe irá entrar em contato com você.
                 </div>
 
 
@@ -580,12 +799,12 @@
         </section>
 
 
-        <section id="duvidas" style="padding:50px 0px;">
-            <div class="container">
-                <h1 class="titulo-sobre ">Com dúvidas? Veja aqui as principais perguntas</h1>
+        <section id="duvidas">
+            <div class="container animatedParent">
+                <h1 class="titulo-sobre animated fadInUp">Com dúvidas? Veja aqui as principais perguntas</h1>
 
 
-                <div class="panel-group" id="accordion" style="padding-top:30px">
+                <div class="panel-group animated growIn" id="accordion" style="padding-top:30px">
                     <div class="panel panel-default">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseUm">
                             <div class="panel-heading">
@@ -656,23 +875,15 @@
                                 </div>
 
                             </div>
-                            <div class="col-lg-3">
-                                <div class="cuadro_intro_hover " style="background-color:#cccccc;">
-                                    <p style="text-align:center; margin-top:20px;">
-                                        <img src="http://placehold.it/500x330" class="img-responsive" alt="">
-                                    </p>
-
-                                </div>
-
-                            </div>
+                        
 
 
-                            <div class="col-lg-3 col-md-6">
-                                <h3>Categories</h3>
+                            <div class="col-lg-4 col-md-6">
+                                <h3>Informações</h3>
                                 <ul>
-                                    <li><a href=""><i class="fa fa-file"></i> Home</a>
+                                    <li><a href=""><i class="fa fa-home"></i> Home</a>
                                     </li>
-                                    <li><a href=""><i class="fa fa-android"></i> Termos e condições</a>
+                                    <li><a href="" data-toggle="modal" data-target=".slacker-modal"><i class="fa fa-book"></i> Termos e condições</a>
                                     </li>
                                     <li><a href="" title="Contact me!"><i class="fa fa-envelope"></i> contato@smartzapp.com</a> </a>
                                     </li>
@@ -682,11 +893,8 @@
                                 </ul>
                             </div>
 
-                            <div class="col-lg-3 col-md-6">
-                                <h3>Contato</h3>
-                                <p>Alguma dúvida? Fique tranquilo que nossa equipe responde rapidinho</p>
-
-                                <h3>Siga-nos:</h3>
+                            <div class="col-lg-5 col-md-6">
+                                <h3>Social</h3>
 
 
                                 <a href="" id="gh" target="_blank" title="Twitter"><span class="fa-stack fa-lg">
@@ -694,6 +902,7 @@
   <i class="fa fa-twitter fa-stack-1x"></i>
 </span>
 Twitter</a>
+                                <br/>
                                 <a href="" target="_blank" title="Linedin"><span class="fa-stack fa-lg">
   <i class="fa fa-square-o fa-stack-2x"></i>
   <i class="fa fa-linkedin fa-stack-1x"></i>
@@ -747,6 +956,114 @@ Linkedin</a>
 
             </div>
 
+            <!-- MODAL -->
+
+            <div class="modal fade in slacker-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+                <div class="modal-dialog modal-slacker">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="myLargeModalLabel">Termo de uso</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <p>Para utilizar o SmartZapp, é indispensável a aceitação dos termos descritos a seguir.</p>
+                            <p>Este Contrato de Licença de Usuário Final ("EULA") é um acordo legal entre licenciado (pessoa Física ou Jurídica) denominado LICIENCIADO e HELLO WORLD SOFTWARE LTDA, pessoa jurídica de direito privado, de caráter técnico inscrita no CNPJ nº 16.872.457/0001-26, com sede na Av Murilo Dantas. , nº 300, sala n° 02 Edifício Incubadora de empresas de base tecnológica, CEP 49032-490, em Aracaju SE, doravante denominado LICENCIANTE, para uso do programa de computador denominado SMARTZAPP, disponibilizado neste ato pela LICENCIANTE (o “SOFTWARE”), pelo prazo determinado pelo LICENCIADO no ato do licenciamento do SOFTWARE, mediante as cláusulas e condições seguintes.</p>
+                            <h4>1. DO OBJETO</h4>
+                            <p>1.1. O presente instrumento tem como objeto o direito de uso por prazo determinado no ato do licenciamento do SOFTWARE, que abrange o programa de computador e pode incluir quaisquer materiais impressos, e qualquer documentação “online” ou eletrônica. Ao utilizar o SOFTWARE, mesmo que parcial ou a título de teste, o licenciado estará vinculado aos termos deste EULA, concordando com os mesmos. Em caso de discordância dos termos aqui apresentados, a utilização do SOFTWARE deve ser imediatamente interrompida.</p>
+
+                            <p>1.2. Sujeito aos termos e condições do presente instrumento, este EULA concede ao LICENCIADO uma licença revogável, não exclusiva e intransferível para usar o SOFTWARE. O LICENCIADO não poderá utilizar e nem permitir o uso do SOFTWARE para outra finalidade que não seja o uso interno. Esta licença não implica na capacidade de acessar outros softwares além daqueles originalmente localizados no SOFTWARE. Em nenhuma hipótese o LICENCIADO terá acesso ao código fonte do SOFTWARE ora licenciado, por este se tratar de propriedade intelectual da LICENCIANTE.</p>
+
+                            <p>1.3. A licença atribuída a este EULA restringe-se na utilização do SOFTWARE, para benefício próprio, e utilização dos recursos conforme plano adquirido, o LICENCIADO não adquire, pelo presente instrumento, nenhum direito de propriedade intelectual ou outros direitos exclusivos, incluindo patentes, desenhos, marcas, direitos autorais ou direitos sobre informações confidenciais ou segredos de negócio, sobre ou relacionados ao SOFTWARE ou nenhuma parte dele. O LICENCIADO também não adquire nenhum direito sobre ou relacionado ao SOFTWARE ou qualquer componente dele, além dos direitos expressamente licenciados ao mesmo sob o presente EULA ou em qualquer outro contrato mutuamente acordado por escrito que o LICENCIADO possa ter celebrado com a LICENCIANTE. Quaisquer direitos não expressamente concedidos sob o presente instrumento são reservados.</p>
+
+                            <h4>2. DECLARAÇÃO DE ACEITE</h4>
+                            <p>2.1. O LICENCIANTE declara ter conhecimento dos direitos e obrigações decorrentes do presente EULA, constituindo este instrumento o acordo completo entre as partes. Declara, ainda, ter lido, compreendido e aceito todos os termos e condições.</p>
+
+                            <h4>3.DAS OBRIGAÇÕES DAS PARTES</h4>
+                            <h5>3.1.Obrigação do LICENCIADO:</h5>
+                            <p>3.1.1. Manter equipe capacitada para a operação do SOFTWARE e para a comunicação com a LICENCIANTE e prover, sempre que ocorrerem quaisquer problemas com o SOFTWARE, toda a documentação e informações que relatem as circunstâncias em que os problemas ocorreram, objetivando facilitar e agilizar os trabalhos, assim como quaisquer detalhes solicitados pela LICENCIANTE;</p>
+
+                            <p>3.1.2. Responder pelas informações inseridas no SOFTWARE, pelo cadastramento, permissões, senhas e modo de uso de seus usuários. A LICENCIANTE em hipótese alguma será responsável pelo conteúdo (informações, senhas, cópias de informações, etc) sobre o SOFTWARE, não sendo, portanto, estas informações revisadas em momento algum. A responsabilidade pelas informações do SOFTWARE é sempre do LICENCIADO.</p>
+
+
+                            <p>3.1.3. Efetuar os pagamentos de acordo com as condições estipuladas neste contrato.</p>
+
+                            <h5>3.2. Obrigação da LICENCIANTE:</h5>
+                            <p>3.2.1. A LICENCIANTE garante ao LICENCIADO que o SOFTWARE deverá funcionar regularmente, se respeitadas às condições de uso definidas neste objeto. Na ocorrência de falhas de programação, a LICENCIANTE obrigar-se-á a corrigir tais falhas, podendo à seu critério, substituir a cópia dos Programas com falhas por cópias corrigidas;</p>
+
+
+                            <p>3.2.2. Fornecer, ato contínuo ao aceite deste EULA, acesso ao SOFTWARE pelo prazo estabelecido entre as Partes;</p>
+
+                            <p>3.2.3. Suspender o acesso ao SOFTWARE que esteja desrespeitando as clausulas deste objeto ou as normas legais em vigor ou ainda, ao final do prazo de validade deste instrumento, independentemente de aviso prévio;</p>
+
+
+                            <p>3.2.4. Alterar as especificações e/ou características do SOFTWARE licenciados para a melhoria e/ou correções de erros;</p>
+
+                            <p>3.2.5.Disponibilizar acesso aos serviços de suporte através de, correio eletrônico (contato@smartzapp.com), para esclarecimento de dúvidas de ordem não funcional diretamente relacionadas a problemas no SOFTWARE.</p>
+
+
+                            <p>3.2.6. A LICENCIADA se isenta de quaisquer obrigações nas situações:
+
+                            </p>
+
+                            <p>3.2.6.1. Por falha de operação, operação por pessoas não autorizadas ou qualquer outra causa em que não exista culpa da LICENCIANTE;</p>
+
+
+                            <p>3.2.6.2. Pelo cumprimento dos prazos legais do LICENCIADO para a entrega de documentos fiscais ou pagamentos de impostos;</p>
+
+                            <p>3.2.6.3. Pelos danos ou prejuízos decorrentes de decisões administrativas, gerenciais ou comerciais tomadas com base nas informações fornecidas pelo SOFTWARE;</p>
+
+                            <p>3.2.6.4. Por problemas definidos como “caso fortuito” ou “força maior” contemplados pelo Art. 393, do Código Civil Brasileiro.</p>
+
+                            <p>3.2.6.5. Em nenhum caso a LICENCIANTE será responsável por danos pessoais ou qualquer prejuízo incidental, especial, indireto ou consequente, incluindo, sem limitação, prejuízos por perda de lucro, corrupção ou perda de dados, falha de transmissão ou recepção de dados, não continuidade do negócio ou qualquer outro prejuízo ou perda comercial, decorrentes ou relacionados ao seu uso ou sua inabilidade em usar o software, por qualquer outro motivo. sob nenhuma circunstância a responsabilidade integral da LICENCIANTE com relação ao licenciado por todos os danos excederá a quantia paga pelo LICENCIADO à LICENCIANTE pela obtenção da presente licença de SOFTWARE.</p>
+                            <h4>4. PRAZO DE VIGÊNCIA</h4>
+                            <p>4.1. O presente EULA entra em vigor na data de seu aceite pelo LICENCIADO.</p>
+
+                            <p>4.2. O prazo de licenciamento do SOFTWARE vigora por um período de 1 mês, a contar do aceite do presente objeto.</p>
+                            <p>4.3. O prazo poderá ser estendido conforme acordado entre as partes. Estando sujeito o novo contrato às atualizações de valor, conforme cláusula 5, deste ELUA.</p>
+
+                            <h4>5. DO PAGAMENTO</h4>
+                            <p>5.1. O LICENCIADO deve pagar ao LICENCIANTE o valor do respectivo plano escolhido de acordo com a periodicidade definida entre as opções de pagamento disponibilizadas ao LICENCIADO no ato da contratação.</p>
+                            <p>5.2. Caso o LICENCIADO, no decorrer da vigência do presente instrumento, opte por outro plano de licenciamento, os valores serão alterados de acordo com o respectivo plano escolhido.</p>
+
+                            <p>5.3. A falta de pagamento nas datas determinadas para seu vencimento acarretará na suspensão de acesso ao SOFTWARE até que as pendências financeiras sejam regularizadas.</p>
+                            <p>5.4. Suspenso o acesso ao SOFTWARE, a LICENCIANTE manterá as informações do LICENCIADO lançadas no mesmo pelo período de 30 (trinta) dias, contados da suspensão de acesso. Neste período, o LICENCIADO poderá solicitar a exportação seus dados no formato CSV.</p>
+
+                            <p>5.5. Caso a suspensão permaneça por prazo superior a 30 (trinta) dias, a LICENCIANTE poderá excluir integralmente as informações lançadas no SOFTWARE pelo LICENCIADO.</p>
+                            <p>5.6. Os valores estabelecidos no ato do licenciamento do SOFTWARE serão atualizados anualmente, ao término dos 6 meses de contrato com o LICENCIADO, não antes do período de término contratual.</p>
+
+                            <h4>6. RESTRIÇÕES</h4>
+                            <p>6.1. Em hipótese alguma é permitido ao LICENCIADO ou a terceiros, de forma geral:</p>
+                            <p>6.1.1. Copiar, ceder, sublicenciar, vender, dar em locação ou em garantia, reproduzir, doar, alienar de qualquer forma, transferir total ou parcialmente, sob quaisquer modalidades, gratuita ou onerosamente, provisória ou permanentemente, o SOFTWARE objeto deste EULA, assim como seus módulos, partes, manuais ou quaisquer informações relativas ao mesmo;</p>
+                            <p>6.1.2. Retirar ou alterar, total ou parcialmente, os avisos de reserva de direito existente no SOFTWARE e na documentação;</p>
+                            <p>6.1.3. Praticar de engenharia reversa, descompilação ou desmontagem do SOFTWARE.</p>
+                            <p>6.2. Estando totalmente sujeito a suspensão imediata da utilização do software e cancelamento do período de contratação, sem quaisquer restituições contratuais por parte da LICENCIANTE</p>
+                            <h4>7. RESCISÃO</h4>
+                            <p>7.1. Em nenhum caso a LICENCIANTE será responsável por danos pessoais ou qualquer prejuízo incidental, especial, indireto ou consequente, incluindo, sem limitação, prejuízos por perda de lucro, corrupção ou perda de dados, falha de transmissão ou recepção de dados, não continuidade do negócio ou qualquer outro prejuízo ou perda comercial, decorrentes ou relacionados ao seu uso ou sua inabilidade em usar o software, por qualquer outro motivo. sob nenhuma circunstância a responsabilidade integral da LICENCIANTE com relação ao licenciado por todos os danos excederá a quantia paga pelo LICENCIADO à LICENCIANTE pela obtenção da presente licença de SOFTWARE.</p>
+                            <p>7.2. Os dados lançados no SOFTWARE da LICENCIANTE são de propriedade do LICENCIADO, portanto ao encerrar este contrato de uso, ele poderá solicitar a exportação seus dados no formato CSV dentro de 30 dias úteis.</p>
+                            <p>7.3. Após o período de 30 (dias) as informações serão totalmente excluídas.</p>
+                            <h4>8. DISPOSIÇÕES LEGAIS</h4>
+                            <p>8.1. A LICENCIANTE, na execução do presente Contrato, sem prejuízo de suas responsabilidades contratuais e legais poderá utilizar, se necessário, o apoio técnico especializado de terceiros, pessoas físicas ou jurídicas independentemente de prévia notificação à CONTRATANTE, desde que não haja custos posteriores à CONTRATANTE.</p>
+                            <p>8.2 O LICENCIADO não poderá prestar serviços a terceiros utilizando o SOFTWARE da LICENCIANTE sem autorização prévia e expressa da mesma;</p>
+                            <p>8.3. Caso o LICENCIADO venha a desenvolver um novo módulo ou produto que caracterize cópia, de todo ou em parte, quer seja do dicionário de dados, quer seja do programa, será considerado como parte do software fornecido pela LICENCIANTE, ficando, portanto, sua propriedade incorporada pela LICENCIANTE e seu uso condicionado a estas cláusulas contratuais;</p>
+                            <p>8.4. Este EULA obriga as partes e seus sucessores e somente o LICENCIADO possui licença não exclusiva para a utilização do SOFTWARE, sendo-lhe, entretanto, vedado transferir os direitos e obrigações impostos por este instrumento. Tal limitação, no entanto, não atinge a LICENCIANTE, que poderá, a qualquer tempo, ceder, no todo ou em parte, os direitos e obrigações inerentes ao presente EULA;</p>
+                            <p>8.5. Não constituem causa de rescisão contratual, o não cumprimento das obrigações aqui assumidas em decorrência de fatos que independam da vontade das partes, tais como os que configuram o caso fortuito e a força maior previstos no artigo 393 do Código Civil Brasileiro;</p>
+
+                            <p>8.6. Se qualquer disposição deste EULA for considerada nula, anulável, inválida ou inoperante, nenhuma outra disposição deste EULA será afetada como consequência disso e, portanto, as disposições restantes deste EULA permanecerão em pleno vigor e efeito como se tal disposição nula, anulável, inválida ou inoperante não estivesse contida neste EULA;</p>
+                            <p>8.7. O LICENCIADO concorda que a LICENCIANTE possa divulgar o fechamento contrato para fins comerciais, fazendo menção ao nome e à marca do LICENCIADO em campanhas comerciais, podendo, inclusive, divulgar mensagens enviadas de forma escrita ou oral, por telefone, para uso em sites, jornais, revistas e outras campanhas, enquanto vigorar o presente EULA. O LICENCIADO aceita, ainda, receber notificações via correio eletrônico sobre treinamentos, parcerias e campanhas relacionadas ao SOFTWARE;</p>
+                            <p>8.8. Neste ato, o LICENCIANTE expressamente autoriza a LICENCIADA a colher e utilizar seus dados técnicos e operacionais presentes no SOFTWARE, para fins de estudos e melhorias no SOFTWARE.</p>
+
+
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- FIM MODAL -->
+
+
+
 
 
             <!-- Bootstrap Core JS -->
@@ -755,6 +1072,7 @@ Linkedin</a>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <!-- Custom Theme JavaScript -->
             <script src="js/custom.js"></script>
+            <script src="js/css3-animate-it.js"></script>
 
 </body>
 

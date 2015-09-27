@@ -124,8 +124,10 @@ $(function () {
         'min-height': $(window).innerHeight() - 100
     });
       $('#video-section').css({
-            'max-height': $(window).innerHeight()
+            'max-height': $(window).innerHeight() 
         });
+    
+
 
     $(window).resize(function () {
         $('#porque').css({
@@ -133,8 +135,9 @@ $(function () {
         });
         
          $('#video-section').css({
-            'max-height': $(window).innerHeight()
+            'max-height': $(window).innerHeight() 
         });
+                
     });
 });
 
@@ -150,3 +153,124 @@ function toggleChevron(e) {
 
 $('#accordion').on('hidden.bs.collapse', toggleChevron);
 $('#accordion').on('shown.bs.collapse', toggleChevron);
+
+
+
+// 
+$(function(){
+    $('#showAgencia').on('click',function(){        
+        $('#card-agencia').slideToggle('slow');
+    });
+    
+    $('#card-agencia .close').on('click',function(){
+        $('#card-agencia').slideToggle('slow');
+    });
+    
+      $('#showVarejo').on('click',function(){        
+        $('#card-varejo').slideToggle('slow');
+    });
+    
+    $('#card-varejo .close').on('click',function(){
+        $('#card-varejo').slideToggle('slow');
+    });
+    
+      $('#showClinica').on('click',function(){        
+        $('#card-clinica').slideToggle('slow');
+    });
+    
+    $('#card-clinica .close').on('click',function(){
+        $('#card-clinica').slideToggle('slow');
+    });
+    
+      $('#showFood').on('click',function(){        
+        $('#card-food').slideToggle('slow');
+    });
+    
+    $('#card-food .close').on('click',function(){
+        $('#card-food').slideToggle('slow');
+    });
+    
+        $('#showLog').on('click',function(){        
+        $('#card-log').slideToggle('slow');
+    });
+    
+    $('#card-log .close').on('click',function(){
+        $('#card-log').slideToggle('slow');
+    });
+    
+      $('#showStyle').on('click',function(){        
+        $('#card-style').slideToggle('slow');
+    });
+    
+    $('#card-style .close').on('click',function(){
+        $('#card-style').slideToggle('slow');
+    });
+    
+      $('#showEducacao').on('click',function(){        
+        $('#card-educacao').slideToggle('slow');
+    });
+    
+    $('#card-educacao .close').on('click',function(){
+        $('#card-educacao').slideToggle('slow');
+    });
+    
+       $('#showParty').on('click',function(){        
+        $('#card-party').slideToggle('slow');
+    });
+    
+    $('#card-party .close').on('click',function(){
+        $('#card-party').slideToggle('slow');
+    });
+    
+       $('#showSeguradora').on('click',function(){        
+        $('#card-seguradora').slideToggle('slow');
+    });
+    
+    $('#card-seguradora .close').on('click',function(){
+        $('#card-seguradora').slideToggle('slow');
+    });
+    
+      $('#showPet').on('click',function(){        
+        $('#card-pet').slideToggle('slow');
+    });
+    
+    $('#card-pet .close').on('click',function(){
+        $('#card-pet').slideToggle('slow');
+    });
+    
+      $('#showCorp').on('click',function(){        
+        $('#card-corp').slideToggle('slow');
+    });
+    
+    $('#card-corp .close').on('click',function(){
+        $('#card-corp').slideToggle('slow');
+    });
+    
+      $('#showServico').on('click',function(){        
+        $('#card-servico').slideToggle('slow');
+    });
+    
+    $('#card-servico .close').on('click',function(){
+        $('#card-servico').slideToggle('slow');
+    });
+    
+    
+});
+
+
+
+
+/* START OF DEMO JS - NOT NEEDED */
+$(function () {
+    if (window.location == window.parent.location) {
+        $('#fullscreen').html('<span class="glyphicon glyphicon-resize-small"></span>');
+        $('#fullscreen').attr('href', 'http://bootsnipp.com/mouse0270/snippets/rgNez');
+        $('#fullscreen').attr('title', 'Back To Bootsnipp');
+    }    
+    $('#fullscreen').on('click', function(event) {
+        event.preventDefault();
+        window.parent.location =  $('#fullscreen').attr('href');
+    });
+    $('#fullscreen').tooltip();
+});
+/* END DEMO OF JS - THAT IS RIGHT NO ADDITONAL JAVASCRIPT NEEDED FOR THIS SNIPPET */
