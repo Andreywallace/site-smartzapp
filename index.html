@@ -52,11 +52,21 @@
 </head>
 
 <body>
+    
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.4&appId=352992051449161";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <header>
 
-        <!--Video Section-->
-        <section class="content-section  hidden-xs  ">
+    <header style="">
+
+        <section class="content-section  hidden-xs ">
             <div id="container">
                 <video autoplay loop muted class="background-video" id="video-section">
                     <source src="video/WorkingSpace.mp4" type="video/mp4">
@@ -66,11 +76,11 @@
                 <div class="content animatedParent">
                     <div class="container">
                         <div class="container col-lg-12">
-                            <h2 class="sub-titulo animated bounceInLeft">SmartZapp é um software com foco na</h3>
-                            <h1 class="titulo animated bounceInRight">Gestão de Atendimento ao Cliente Via <strong> WhatsApp!</strong></h1>
+                            <h2 class="sub-titulo animated bounceIn">SmartZapp é um software com foco na</h3>
+                            <h1 class="titulo animated bounceIn">Gestão de Atendimento ao Cliente Via <strong> WhatsApp!</strong></h1>
         
                             <div class="row linha-ul">
-                                <div class="col-sm-6">
+                                <div class="col-sm-8">
                                     <ul class="fa-ul titulo-ul">
                                         <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Plataforma 100% online</h3></li>
                                         <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Envio de mensagens em lote</h3></li>
@@ -78,27 +88,24 @@
                                         <li class="animated fadeInUp"><i class="fa-li fa fa-check" style="color:#009c67"></i><h3>Múltiplos agentes</h3></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-6 ">
+                                <div class="col-sm-4 ">
                                      <a href="#" class="btn btn-sq-lg btn-success animated fadeIn">
                                          <i class="fa fa-sign-in fa-5x"></i><br/>
                                             <h4>Login</h4>
                                     </a>
-                                     <a href="#contacte" class="btn btn-sq-lg btn-success   animated fadeIn">
-                                         <i class="fa fa-user fa-5x"></i><br/>
-                                            <h4>Contato</h4>
-                                    </a>
+                                    
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Video Section Ends Here-->
 
 
-        <nav id="custom-bootstrap-menu" role="navigation" class="navbar navbar-default menu menu-sempre-fixo container" style="box-shadow:0 2px 6px rgba(0,0,0,0.5);background:#28292A;"  >
 
-             <div class="container">
+        <div id="custom-bootstrap-menu" role="navigation" class="navbar navbar-default menu menu-sempre-fixo container" style="box-shadow:0 2px 6px rgba(0,0,0,0.5);background:#28292A;"  >
+
+        <div class="container">
             <div class="navbar-header" style="max-height:100%;background-color:#28292A; " >
                
                 <a id="brand" class="navbar-brand opcao-menu-brand" style="padding: 0px 20px;margin-top:15px;margin-bottom: 15px;" href="#"><img src="img/favicon.png" style="max-height: 100%;">
@@ -122,26 +129,34 @@
                     </li>
 
                     
-                    <li><a href="#areas" class="opcao-menu" style="padding: 30px 20px;">Áreas de atuação</a>
+                    <li><a href="#areas" class="opcao-menu" style="padding: 30px 10px;">Áreas de atuação</a>
                     </li>
                     
-                    <li><a href="#funcionalidades" class="opcao-menu" style="padding: 30px 20px;">Funcionalidades</a>
+                    <li><a href="#funcionalidades" class="opcao-menu" style="padding: 30px 10px;">Funcionalidades</a>
                     </li>
 
-                    <li><a href="#planos" class="opcao-menu" style="padding: 30px 20px;">Planos</a>
+                    <li><a href="#planos" class="opcao-menu" style="padding: 30px 10px;">Planos</a>
                     </li>
-                    <li><a href="#duvidas" class="opcao-menu" style="padding: 30px 20px;">Dúvidas?</a>
+                    
+                    <li><a href="#contacte" class="opcao-menu" style="padding: 30px 10px;">Contato</a>
+                    </li>
+                   
+                    
+                    <li><a href="#duvidas" class="opcao-menu" style="padding: 30px 10px;">Dúvidas?</a>
                     </li>
     
                 </ul>
             </div>
             </div>
-        </nav>
+        </div>
 
 
+            
     </header>
+    
+    
         
-        <section  id="home-mob" class="hidden-lg hidden-md">
+        <section  id="home-mob" class="hidden-lg hidden-md hidden-sm">
             
             <div class="container">
                 <h3 class="sub-titulo-mob" style="    padding-top: 70px;">  Smart Zapp sua solução para </h3>
@@ -176,13 +191,13 @@
 
                 <div class="row " id="porque" style="padding:50px 0px">
                     <div class="col-md-5">
-                        <!-- begin panel group -->
-                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;" class="animated fadeInLeft">O que fazemos pelo seu negócio?</h2>
+
+                        <h2 style="padding-bottom:15px;color:#00a676;font-family: 'Roboto Condensed', sans-serif;" class="animated fadeIn">O que fazemos pelo seu negócio?</h2>
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                            <!-- panel 1 -->
+
                             <div class="panel panel-default animated fadeInUp">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+
                                 <span class="side-tab" data-target="#tab1" data-toggle="tab" role="tab" aria-expanded="false">
                         <div class="panel-heading " role="tab" id="headingOne"data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <h4 class="panel-title ">Atenda clientes via WhatsApp</h4>
@@ -190,16 +205,14 @@
                     </span>
                                 <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
                                     <div class="panel-body">
-                                        <!-- Tab content goes here -->
+
                                         O WhatsApp está presente em 79% dos smartphones com mais de 1 bilhão de downloads, possuindo uma melhor interação para o atendimento através do envio e recebimento de mensagens, vídeos e imagens.
                                     </div>
                                 </div>
                             </div>
-                            <!-- / panel 1 -->
 
-                            <!-- panel 2 -->
                             <div class="panel panel-default animated fadeInUp">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+
                                 <span class="side-tab" data-target="#tab2" data-toggle="tab" role="tab" aria-expanded="false">
                         <div class="panel-heading " role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h4 class="panel-title collapsed">Gestão de chats com clientes</h4>
@@ -208,16 +221,14 @@
 
                                 <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                     <div class="panel-body">
-                                        <!-- Tab content goes here -->
+
                                         Envie mensagens com texto, imagem e vídeo e interaja através de um chat online utilizando o seu navegador web favorito.
                                     </div>
                                 </div>
                             </div>
-                            <!-- / panel 2 -->
 
-                            <!--  panel 3 -->
                             <div class="panel panel-default animated fadeInUp">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+
                                 <span class="side-tab" data-target="#tab3" data-toggle="tab" role="tab" aria-expanded="false">
                         <div class="panel-heading " role="tab" id="headingThree"  class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h4 class="panel-title">Gerencie o whatsapp pelo navegador</h4>
@@ -226,15 +237,15 @@
 
                                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                                     <div class="panel-body">
-                                        <!-- tab content goes here -->
+
                                         Com o SmartZapp você se relaciona com seus clientes através de uma plataforma 100% web integrada ao WhatsApp, permitindo assim uma gestão completa de todos os atendimentos.
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- panel 4 -->
+
                             <div class="panel panel-default animated fadeInUp">
-                                <!--wrap panel heading in span to trigger image change as well as collapse -->
+
                                 <span class="side-tab" data-target="#tab4" data-toggle="tab" role="tab" aria-expanded="false">
                         <div class="panel-heading " role="tab" id="headingFour"data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <h4 class="panel-title">Reduza seu custo com ligações</h4>
@@ -243,26 +254,26 @@
 
                                 <div id="collapseFour" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingFour">
                                     <div class="panel-body">
-                                        <!-- Tab content goes here -->
+
                                         Atenda mais e com menos custos, reduza as chamadas telefônicas e vá para o WhatsApp, reduzindo assim o tempo de resposta no atendimento com o cliente.
                                     </div>
                                 </div>
                             </div>
-                            <!-- / panel 1 -->
+
 
                         </div>
-                        <!-- / panel-group -->
+
 
                     </div>
-                    <!-- /col-md-4 -->
+
 
                     <div class="col-md-7 hidden-sm	 hidden-xs">
-                        <!-- begin macbook pro mockup -->
+
                         <div class="md-macbook-pro md-glare animated growIn">
                             <div class="md-lid">
                                 <div class="md-camera"></div>
                                 <div class="md-screen">
-                                    <!-- content goes here -->
+
                                     <div class="tab-featured-image">
                                         <div class="tab-content">
                                             <div class="tab-pane  in active" id="tab1">
@@ -287,17 +298,18 @@
                             </div>
                             <div class="md-base"></div>
                         </div>
-                        <!-- end macbook pro mockup -->
+
 
 
 
                     </div>
-                    <!-- / .col-md-8 -->
+
                 </div>
-                <!--/ .row -->
+
             </div>
 
         </section>
+
         <section id="parallaxBar" class="hidden-xs animatedParent" data-speed="6" style="background: url('img/bg_smartzap.jpg') 0% 0 fixed;background-size:cover">
             <div style="background:url(img/bg_video.png);height:100%">
                 <div class="container">
@@ -311,12 +323,12 @@
         <section id="areas">
             <div class="container animatedParent">
                 <div class="row " style="padding:50px 0px" id="porque">
-                    <h1 class="titulo-sobre animated bounceInLeft">Áreas de Atuação</h1>
-                    <h3 style="text-align:center;margin-top: 0px;" class="animated bounceInRight">Confira os principais modelos de negócios que buscamos ajudar.</h3>
+                    <h1 class="titulo-sobre animated bounceIn">Áreas de Atuação</h1>
+                    <h3 style="text-align:center;margin-top: 0px;" class="animated bounceIn">Confira os principais modelos de negócios que buscamos ajudar.</h3>
 
-                    
+
                     <div class="col-md-3 col-xs-12">
-                        <div class="card animated fadeIn" data-id='1' >
+                        <div class="card animated fadeIn" data-id='1'>
                             <div class="card-image">
                                 <img class="img-responsive" src="img/areas/agencia.jpg">
 
@@ -631,7 +643,7 @@
 
         <section id="funcionalidades" class="cta cta-secondary  animatedParent">
             <div class="container">
-                <h1 style="text-align:center" class="animated fadeInLeft"> Descubra as nossas funcionalidades</h1>
+                <h1 style="text-align:center" class="animated fadeIn"> Descubra as nossas funcionalidades</h1>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="notice animated fadeInUp">
@@ -672,7 +684,7 @@
 
         <section id="planos">
             <div class="container animatedParent">
-                <h1 class="titulo-sobre animated fadeInLeft" style="">Tudo isso por um investimento justo para o seu negócio.</h1>
+                <h1 class="titulo-sobre animated fadeIn" style="">Tudo isso por um investimento justo para o seu negócio.</h1>
 
 
                 <div class="row db-padding-btm db-attached animated fadeInUp">
@@ -765,6 +777,7 @@
         </section>
 
 
+
         <section id="parallaxBar" class="hidden-xs animatedParent" data-speed="6" style="background: url('http://coworkingbrasil.org/app/wp-content/uploads/cache/2014/11/foto-salvador1/2863925724.jpg') 0% 0 fixed;background-size:cover">
             <div style="background:url(img/bg_video.png);height:100%">
                 <div class="container ">
@@ -774,30 +787,31 @@
             </div>
         </section>
 
-        <section id="contacte" class="cta cta-secondary animatedParent">
-            <div class="container ">
-                <h1 class="animated fadeInUp">E aí, pronto para começar? Entre em contato.</h1>
 
-                <!--Posar codis de conversió-->
+
+        <section id="contacte" class="cta cta-secondary ">
+            <div class="container animatedParent">
+                <h1 class="">E aí, pronto para começar? Entre em contato.</h1>
+
+
                 <form class="row" action="/en/signup" method="post">
-                    <div class="col-md-3 col-md-offset-2 col-sm-4 animated fadeInLeft">
+                    <div class="col-md-3 col-md-offset-2 col-sm-4 ">
                         <input type="text" class="form-control" placeholder="Seu nome" name="snname">
                     </div>
-                    <div class="col-md-3 col-sm-4 animated fadeInRight">
+                    <div class="col-md-3 col-sm-4 ">
                         <input type="text" class="form-control" placeholder="Email comercial" name="snemail">
                     </div>
-                    <div class="col-md-3 col-sm-4 animated fadeInRight">
+                    <div class="col-md-3 col-sm-4 ">
                         <button type="submit" class="btn db-button-color-square " name="cmdSignup" value="1"><strong>Enviar email</strong>
                         </button>
                     </div>
                 </form>
-                <div class="text-center animated fadeInUp" style="color:white;padding:20px 0px">Em poucos instantes nossa equipe irá entrar em contato com você.
+                <div class="text-center " style="color:white;padding:20px 0px">Em poucos instantes nossa equipe irá entrar em contato com você.
                 </div>
 
 
             </div>
         </section>
-
 
         <section id="duvidas">
             <div class="container animatedParent">
@@ -867,15 +881,17 @@
 
 
                             <div class="col-lg-3">
-                                <div class="cuadro_intro_hover " style="background-color:#cccccc;">
+                               <!-- <div class="cuadro_intro_hover " style="background-color:#cccccc;">
                                     <p style="text-align:center; margin-top:20px;">
                                         <img src="http://placehold.it/500x330" class="img-responsive" alt="">
                                     </p>
 
-                                </div>
+                                </div> -->
 
+                                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+                                
                             </div>
-                        
+
 
 
                             <div class="col-lg-4 col-md-6">
@@ -910,41 +926,7 @@ Twitter</a>
 Linkedin</a>
 
 
-
-
-
-
                             </div>
-                            <br/>
-                            <div id="fb-root"></div>
-                            <script>
-                                (function (d, s, id) {
-                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                    if (d.getElementById(id)) return;
-                                    js = d.createElement(s);
-                                    js.id = id;
-                                    js.src = "//connect.facebook.net/hu_HU/sdk.js#xfbml=1&version=v2.0";
-                                    fjs.parentNode.insertBefore(js, fjs);
-                                }(document, 'script', 'facebook-jssdk'));
-                            </script>
-
-                            <div class="fb-like" data-href="" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
-
-
-                            <div class="g-plusone" data-annotation="inline" data-width="300" data-href=""></div>
-
-                            <!-- Helyezd el ezt a címkét az utolsó +1 gomb címke mögé. -->
-                            <script type="text/javascript">
-                                (function () {
-                                    var po = document.createElement('script');
-                                    po.type = 'text/javascript';
-                                    po.async = true;
-                                    po.src = 'https://apis.google.com/js/platform.js';
-                                    var s = document.getElementsByTagName('script')[0];
-                                    s.parentNode.insertBefore(po, s);
-                                })();
-                            </script>
 
         </footer>
         <section id="rodape">

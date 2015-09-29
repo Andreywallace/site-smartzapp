@@ -1,3 +1,5 @@
+
+
 $(window).bind('scroll', function () {
     if ($(window).scrollTop() >= $(window).height() - 80) {
         $('.menu').addClass('fixed');
@@ -124,7 +126,11 @@ $(function () {
         'min-height': $(window).innerHeight() - 100
     });
       $('#video-section').css({
-            'max-height': $(window).innerHeight() 
+            'min-height': $(window).innerHeight() 
+        });
+    
+            $('#video-section').css({
+            'min-width': $(window).innerWidth() 
         });
     
 
@@ -135,8 +141,14 @@ $(function () {
         });
         
          $('#video-section').css({
-            'max-height': $(window).innerHeight() 
+            'min-height': $(window).innerHeight() 
         });
+        
+            $('#video-section').css({
+            'min-width': $(window).innerWidth() 
+        });
+        
+        
                 
     });
 });

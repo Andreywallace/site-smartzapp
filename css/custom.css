@@ -1,3 +1,16 @@
+html, body {
+   max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+
+
+}
+
+
+#container {
+    position: relative;
+    overflow: hidden;
+}
+
 .background-video {
     -webkit-filter: grayscale(85%);
 }
@@ -9,6 +22,7 @@
 
 #funcionalidades {
     padding: 50px 0px;
+ 
 }
 
 #funcionalidades h1 {
@@ -28,7 +42,9 @@
 }
 
 #contacte {
-    padding: 50px 0px;
+   
+     padding: 85px 0;
+  
 }
 
 #contacte h1 {
@@ -263,6 +279,11 @@ body {
     text-shadow: 1px 1px 1px #000;
     font-size: 1.7em;
     color: white;
+}
+
+.titulo-ul h3 {
+    margin-top: 5px;
+     margin-bottom: 5px;
 }
 
 .titulo strong,
